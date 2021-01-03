@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger</title>
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <div class="messenger">
+        <div class="status">
+            <div class="status__row mb-10">
+                <div>Name:</div>
+                <div>
+                    <span class="status__activity">offline</span> 
+                    <i class="status__icon status__icon--red"></i>
+                </div>
+            </div>
+            <div class="status__row">
+                <div class="status__username">&mdash;</div>
+            </div>
+
+            <div class="status__divider"></div>
+
+            <div class="status__row mb-10">
+                <div>Users in room:</div>
+                <div class="status__count">1</div>
+            </div>
+
+            <div class="status__users"></div>
+        </div>
+
+        <div class="messenger__top"></div>
+
+        <div class="messenger__bottom">
+            <form method="post" class="text-form">
+                <textarea name="message" class="text-form__input"></textarea>
+                <button type="submit" class="text-form__submit-btn">Send message</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="client.js"></script>
+</body>
+</html>
